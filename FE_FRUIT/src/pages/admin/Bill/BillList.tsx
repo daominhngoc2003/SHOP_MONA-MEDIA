@@ -1,9 +1,9 @@
-import { Pagination, Space, Table } from 'antd';
+import { Space } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { Button, Popconfirm } from 'antd';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { BillContext } from '../../../provider/BillReducer';
 import { GetAllBill } from '../../../api/Bill';
@@ -29,6 +29,8 @@ const BillList = () => {
     }, [])
 
     const onHandleRemove = async (_id: string) => {
+        console.log(_id);
+
         // try {
         //     const { data } = await deleteCategory(_id);
         //     if (data) {
