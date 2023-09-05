@@ -1,0 +1,89 @@
+
+// SEARCH
+nav .navbar-wrapper .search-form a i{
+    padding: 0 10px;
+    color: grey;
+}
+nav .navbar-wrapper .search-form {
+   display: flex;
+   align-items: center;
+}
+nav .navbar-wrapper  .search-form input{
+    padding: 10px 20px;
+    color: grey;
+    outline: none;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 3px 3px 10px -1px rgb(210, 208, 208);
+    font-size: 15px;
+}
+nav .navbar-wrapper  .search-form input:focus{
+    border-bottom: 1px solid gray;
+    transition: 0.5s ease-in-out;
+    transition-duration: 300ms;
+}
+nav .navbar-wrapper  .search-form button:hover{
+    color: #86ba09;
+    transition: 0.5s ease-in-out;
+    transition-duration: 300ms;
+}
+nav .navbar-wrapper  .search-form button{
+    padding: 10px 10px;
+    color: grey;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 19px;
+}
+
+// rounded-md z-50 absolute w-[530px] mt-5
+.wrapper-search{
+    border-radius: 5px;
+    z-index: 50;
+    position: absolute;
+
+}
+
+.w-200{
+    margin-top: 5px;
+    max-width: 300px;
+    right: 0;
+    left: 0;
+}
+.wrapper-search .notFound{
+    text-align: center;
+    padding: 10px 10px;
+    background: rgb(182, 181, 181);
+}
+.wrapper-search .product-list{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: #ccc;
+}
+.wrapper-search .product-list .product-content{
+    margin-left: 10px;
+}
+
+.wrapper-search .product-list .product-content a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    transition: 0.2s;
+}
+.wrapper-search .product-list .product-content a:hover{
+    color:#86ba09;
+}
+
+.wrapper-search .product-list .picture{
+    overflow: hidden;
+}
+.wrapper-search .product-list .picture img{
+    transform: scale(1.15);
+    transition: 0.2s;
+}
+.wrapper-search .product-list .picture img:hover{
+    transform: scale(1.15);
+    
+}
+

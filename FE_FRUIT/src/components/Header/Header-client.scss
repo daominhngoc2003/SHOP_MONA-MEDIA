@@ -1,0 +1,187 @@
+
+/* HEADER */
+
+.header-wrapper .navbar-logo h1{
+    color: #86ba09;
+    font-weight: 700;
+}
+
+/* NAV */
+
+.navbar{
+    /* border-bottom: 1px solid #c3c2c2; */
+    box-shadow: 1px 1px 10px 0px #c3c2c2;
+}
+
+nav .navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+nav .navbar-wrapper .navbar-actions{
+    display: flex;
+    align-items: center;
+}
+
+
+nav .navbar-wrapper .navbar-actions .account a i{
+    padding: 0 10px;
+    font-size: 20px;
+    color: grey;
+    margin: 0;
+}
+nav .navbar-wrapper .navbar-actions .account a i:hover{
+    color: #86ba09;
+    transition: 0.5s all;
+    transition-duration: 200ms;
+}
+nav .navbar-wrapper .navbar-actions .cart a i{
+    padding: 0 10px;
+    font-size: 20px;
+    color: grey;
+}
+nav .navbar-wrapper .navbar-actions .cart a i:hover{
+    color: #86ba09;
+    transition: 0.5s all;
+}
+
+nav .navbar-wrapper ul {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0;
+
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #666666;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover{
+    color: #86ba09;
+    transition: 0.5s all;
+    transition-duration: 700ms;
+}
+
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 500px; /* Giá trị tối đa cho chiều cao */
+    }
+}
+.menu-item{
+    position: relative;
+}
+.menu-item .submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    background-color: #f4f3f3;
+    padding: 5px;
+    width: 100%;
+    /* transition: opacity 4s, max-height 5s; */
+    opacity: 0;
+    max-height: 0;
+    min-width: 200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    right: 5px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    transition: opacity 0.5s, max-height 0.5s; 
+}
+
+/* .group:hover .submenu {
+    visibility: initial;
+} */
+.menu-item:hover .submenu {
+    transition-delay: 0s, 0.5s;
+    display: block;
+    opacity: 1;
+    max-height: 500px; /* Giá trị tối đa cho chiều cao */
+    padding: 10px 20px;
+  }
+
+  
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 500px; /* Giá trị tối đa cho chiều cao */
+    }
+}
+.account{
+    position: relative;
+}
+.account .account-submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    background-color: #f4f3f3;
+    padding: 5px;
+    width: 100%;
+    /* transition: opacity 4s, max-height 5s; */
+    opacity: 0;
+    max-height: 0;
+    min-width: 200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    right: 5px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    transition: opacity 0.5s, max-height 0.5s; 
+}
+
+/* .group:hover .submenu {
+    visibility: initial;
+} */
+.account:hover .account-submenu {
+    transition-delay: 0s, 0.5s;
+    display: block;
+    opacity: 1;
+    max-height: 500px; /* Giá trị tối đa cho chiều cao */
+    padding: 10px 20px;
+    top: 6px;
+  }
+.account:hover .account-submenu li{
+    padding: 7px 0;
+  }
+
+  .logout{
+    background: none;
+    outline: none;
+    border: none;
+    color: #666666;
+    padding-left: 10px;
+    font-weight: 500;
+  }
+
+  .logout:hover{
+    color: #86ba09;
+  }
+
+  
